@@ -1,7 +1,7 @@
 runtime: python39  # Specify the Python version you want to use
 skip_files:
   - ^/home/alessio/.local/lib/python3.9/site-packages/pyarrow/libarrow\.so\.1300$
-
+env: flex
 # This section specifies how URLs are routed to your app
 handlers:
 - url: /.*  # Match all URLs
