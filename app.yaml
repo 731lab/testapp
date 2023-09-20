@@ -3,4 +3,4 @@ runtime: python39  # Specify the Python version you want to use
 # This section specifies how URLs are routed to your app
 handlers:
 - url: /.*  # Match all URLs
-  script: auto  # Let App Engine choose the appropriate handler based on the URL path
+  script: app.py  # Specify the entry point for your app (app.py in this case)
