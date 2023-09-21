@@ -1,5 +1,7 @@
-runtime: custom
+runtime: python
+runtime_config:
+    runtime_version: 3.9
+entrypoint: streamlit run --server.port=8080 --server.address=0.0.0.0 --server.enableCORS=false --server.enableWebsocketCompression=false --server.enableXsrfProtection=false --server.headless=true app.py
 env: flex
-
-# Indica la posizione dell'immagine Docker nel registro dei contenitori di Google
-image: gcr.io/lithe-timer-399617/my-python-app:latest
+network:
+    session_affinity: true
