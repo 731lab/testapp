@@ -1,2 +1,2 @@
 pydub
-streamlit
+streamlit~=1.2.0
